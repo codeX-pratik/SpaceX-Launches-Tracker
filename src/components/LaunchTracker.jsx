@@ -58,9 +58,10 @@ function LaunchTracker() {
                         <p>
                             Details: {launch.details ? launch.details: 'No details available for this launch'}
                         </p>
+                        {launch.links.webcast ? 
                         <a href={launch.links.webcast} target="_blank" rel="noopener noreferrer">
                             Watch Launch
-                        </a>
+                        </a> : ""}
                     </li>
                 ))}
             </ul>
